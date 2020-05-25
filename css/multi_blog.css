@@ -1,0 +1,41 @@
+.card{ /*Adding shadows to create the "card" effect*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+/*On mouse-over, add a deeper shadow */
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*Add some padding inside the the card Container */
+
+.container{
+    padding: 2px 16px;
+}
+
+/*Display in line block for card with*/
+
+.card_values{
+    vertical-align: center;
+}
+.more,.icon_c,.icon_h{
+    display: inline-block;
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.icon_h:target{
+    color: red;
+    content: "\f004";
+}
+.icon_c:hover{
+    color: red;
+    content: "\f004";
+}

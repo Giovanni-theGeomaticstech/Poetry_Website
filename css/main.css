@@ -1,0 +1,344 @@
+body,html{
+    height:100%
+}
+
+section{
+    width:100%
+}
+
+/* Pertaining to slideshow */
+#slideshow{
+    height:100%
+}
+
+.bg { 
+  /* Full height */
+  height: 100%;
+  display:block; /*important for making slideshow actually show*/
+  /* Center and scale the image nicely */
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*****************************************************/
+/* Pertaining to the about us page */
+
+.art{
+    padding-top: 10% !important;
+    padding: 5%;
+    color:black;
+}
+
+.pad{
+    padding: 3.5%;
+    padding-bottom: 1.5%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*****************************************************/
+
+
+/***********************************************
+
+/*This section is for the Site Description */
+.title_web{
+    padding-left: 5% !important;
+    padding-top: 3.5% !important;
+    font-weight:bold;
+    width: 100%;
+}
+
+.left{
+    float: left !important;
+}
+
+.right{
+    float: right !important;
+}
+
+.sizing{
+    width: 250px;
+    height: 250px;
+}
+
+.background1{
+    background-color:white;
+}
+.page{
+    background-color: white!important;
+}
+
+.background2{
+    background-color:beige;
+}
+.page2{
+    background-color: beige!important;
+}
+
+
+
+
+
+/***********************************************/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  background-color: whitesmoke;
+  padding: 5%;
+  width: 100%;
+  /*grid-auto-rows: 50%;
+  grid-auto-columns: 50%;*/
+}
+
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  background-color: whitesmoke;
+  padding: 5%;
+  width: 100%;
+  /*grid-auto-rows: 50%;
+  grid-auto-columns: 50%;*/
+}
+
+.grid-container2 > div{
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 10% 0% 30% 0%;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+
+
+
+
+/*New image grid*/
+.row { /*thus to use it i have to set the row to flex*/
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 3%;    
+}
+/*Flex sets the flexible lengths of items*/
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0.2%;
+}
+
+.column div {
+    vertical-align: middle;
+    height: 300px;
+    margin-top: 2%;
+    position: relative;
+    /*padding:1%;*/
+}
+
+.img_background1{
+  /*Center and scale the image nicely*/ 
+  background-image: url(images/image_5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img_background2{
+
+    /*Center and scale the image nicely*/ 
+    background-image: url(images/image_7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img_background3{
+
+    /*Center and scale the image nicely*/  
+    background-image: url(images/image_8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img_background4{
+    text-align: center;
+
+    /*Center and scale the image nicely*/  
+    background-image: url(images/insta-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/************************************************/
+
+/*For the overlayed item effect*/
+
+
+
+
+
+
+
+.imgs_overlay {
+  position: absolute;
+  padding: 10%;
+  /*
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.imgs_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  /*top: 50%;
+  left: 50%;*/
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.white_color{
+    color: white;
+}
+.bts{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+}
+.bts:hover{
+    opacity: 1 !important;
+    background-color: red;
+    transition: .5s ease;
+}
+
+.column div:hover .imgs_overlay{
+    opacity: 0.8;
+}
+
+
+
+/************************************************/
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    height:0% !important;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    height:0% !important;
+  }
+}
+
+/********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************/
+
+/*.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}*/
+
+
+/*
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}*/
+
+
+
+
+

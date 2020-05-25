@@ -1,0 +1,27 @@
+[debug] [2020-05-08T22:01:54.075Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T22:01:54.078Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gioha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-05-08T22:01:54.078Z] CLI Version:   7.8.1
+[debug] [2020-05-08T22:01:54.078Z] Platform:      win32
+[debug] [2020-05-08T22:01:54.078Z] Node Version:  v12.16.1
+[debug] [2020-05-08T22:01:54.079Z] Time:          Fri May 08 2020 18:01:54 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-08T22:01:54.079Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T22:01:54.079Z] 
+[debug] [2020-05-08T22:01:54.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T22:01:54.141Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\gioha\Documents\Angular_learning\Poetry_Website
+
+[debug] [2020-05-08T22:02:07.001Z] Error: kill ENOSYS
+    at process.kill (internal/process/per_thread.js:196:13)
+    at process.listener (C:\Users\gioha\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (events.js:311:20)
+[error] 
+[error] Error: An unexpected error has occurred.
